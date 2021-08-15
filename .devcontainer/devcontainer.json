@@ -1,0 +1,107 @@
+{
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+    "akamud.vscode-theme-onelight",
+    "denoland.vscode-deno",
+    "eamodio.gitlens",
+    "github.github-vscode-theme",
+    "ms-vscode.theme-1337",
+    "Tyriar.sort-lines",
+    "usernamehw.errorlens"
+  ],
+  "settings": {
+    "workbench.colorTheme": "GitHub Dark Default",
+    "deno.enable": true,
+    "deno.suggest.imports.hosts": {
+      "https://deno.land": true
+    },
+    "editor.codeLens": true,
+    "[javascript]": {
+      "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[markdown]": {
+      "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": "punctuation.definition.comment",
+          "settings": {
+            "foreground": "#0A44",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "comment",
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ],
+      "[GitHub Dark Default]": {
+        "textMateRules": [
+          {
+            "scope": "comment",
+            "settings": {
+              "foreground": "#FFF"
+            }
+          }
+        ]
+      },
+      "[GitHub Light Default]": {
+        "textMateRules": [
+          {
+            "scope": "comment",
+            "settings": {
+              "foreground": "#000"
+            }
+          }
+        ]
+      },
+      "[Atom One Light]": {
+        "textMateRules": [
+          {
+            "scope": "comment",
+            "settings": {
+              "foreground": "#000"
+            }
+          }
+        ]
+      }
+    },
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.minimap.maxColumn": 80,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.size": "fit",
+    "editor.renderWhitespace": "trailing",
+    "editor.rulers": [
+      80,
+      100,
+      120
+    ],
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "indent",
+    "explorer.sortOrder": "filesFirst",
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "git.autofetch": true
+  }
+}

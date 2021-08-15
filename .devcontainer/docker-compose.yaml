@@ -1,0 +1,14 @@
+{
+  version: "3.8",
+  services:
+    {
+      app:
+        {
+          build: { context: "..", dockerfile: ".devcontainer/Dockerfile" },
+          volumes: ["..:/workspace"],
+          user: "codespace",
+          command: "sleep infinity",
+          depends_on: [],
+        },
+    },
+}
