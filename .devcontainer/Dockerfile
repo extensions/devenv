@@ -7,7 +7,6 @@ ENV DENO_INSTALL=/deno \
 
 RUN mkdir -p /deno \
     && curl -fsSL https://deno.land/x/install/install.sh | sh \
-    && curl -fsSL https://get.wasmer.io | sh \
     && ln -s /deno/bin/deno /usr/bin/deno \
     && apt-get update && apt-get -y install ripgrep \
     && rustup toolchain add nightly beta \
