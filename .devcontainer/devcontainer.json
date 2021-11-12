@@ -9,7 +9,8 @@
     "github.github-vscode-theme",
     "ms-vscode.theme-1337",
     "Tyriar.sort-lines",
-    "usernamehw.errorlens"
+    "usernamehw.errorlens",
+    "matklad.rust-analyzer"
   ],
   "settings": {
     "workbench.colorTheme": "GitHub Dark Default",
@@ -18,6 +19,9 @@
       "https://deno.land": true
     },
     "editor.codeLens": true,
+    "[rust]": {
+      "editor.defaultFormatter": "matklad.rust-analyzer"
+    },
     "[javascript]": {
       "editor.defaultFormatter": "denoland.vscode-deno"
     },

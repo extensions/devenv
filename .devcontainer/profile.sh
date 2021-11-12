@@ -1,4 +1,4 @@
-export PATH="$PATH:$HOME/.deno/bin"
+export PATH="$PATH:$HOME/.deno/bin:$HOME/bin"
 
 function x {
   declare argc="$#"

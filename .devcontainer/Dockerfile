@@ -22,10 +22,11 @@ USER codespace
 
 ENV RUSTC_WRAPPER=sccache
 
-RUN cargo install cargo-edit cargo-expand cargo-udeps cargo-geiger wasm-bindgen-cli
+RUN cargo install cargo-edit cargo-expand cargo-udeps cargo-geiger cargo-asm wasm-bindgen-cli
 
-COPY .devcontainer/profile.sh /home/codespace/.devenv.profile.sh
+COPY .devcontainer/profile.sh /home/codespace/profile.sh
+COPY .devcontainer/save /home/codespace/bin/save
 
 RUN deno install --allow-all --no-check --unstable https://deno.land/x/deploy/deployctl.ts \
     && deno cache --no-check https://deno.land/std/crypto/mod.ts \
-    && echo source /home/codespace/.devenv.profile.sh | tee --append /home/codespace/.bashrc /home/codespace/.zshrc
+    && echo source /home/codespace/profile.sh | tee --append /home/codespace/.bashrc /home/codespace/.zshrc
